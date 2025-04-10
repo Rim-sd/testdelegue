@@ -1,0 +1,3484 @@
+{
+  "Version": 1,
+  "Hash": "R1rRfYpxecPxG/jpyXG8mhIQ1nrH0vdaul5C0R8U7j4=",
+  "Source": "test",
+  "BasePath": "/",
+  "Mode": "Root",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "test\\wwwroot",
+      "Source": "test",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\",
+      "BasePath": "/",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\8byfk8o8fg-31yucqurzi.gz",
+      "SourceId": "test",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "css/app#[.{fingerprint=31yucqurzi}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\app.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "3xi5gsag0i",
+      "Integrity": "+XBluDUEBhvPsA0EWCahtuHQDKI1ZC+dtn+lPj/Ov4U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\9lsaidfgsq-3oybsdg70o.gz",
+      "SourceId": "test",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "test#[.{fingerprint=3oybsdg70o}]?.styles.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\test.styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "luuaopbs62",
+      "Integrity": "rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\test.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\jhldhs4rh6-3oybsdg70o.gz",
+      "SourceId": "test",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "test#[.{fingerprint=3oybsdg70o}]!.bundle.scp.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\test.bundle.scp.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "luuaopbs62",
+      "Integrity": "rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\test.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\klpa1umk4e-o5modphs96.gz",
+      "SourceId": "test",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "index#[.{fingerprint=o5modphs96}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "smioee6woz",
+      "Integrity": "VJqDx2yt5RwgxNtut0ApcLrXd5k65qUrhw9WEVw2kEs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\8byfk8o8fg-31yucqurzi.br",
+      "SourceId": "test",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\",
+      "BasePath": "/",
+      "RelativePath": "css/app#[.{fingerprint=31yucqurzi}]?.css.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\app.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "4rvtwv18tc",
+      "Integrity": "AK4+EuYbhE7s8s5kdZJ/Oiw2yp56MZlcmMs0xIkIU3U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\9lsaidfgsq-3oybsdg70o.br",
+      "SourceId": "test",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\",
+      "BasePath": "/",
+      "RelativePath": "test#[.{fingerprint=3oybsdg70o}]?.styles.css.br",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\test.styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "hruv1dfj07",
+      "Integrity": "g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\test.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\jhldhs4rh6-3oybsdg70o.br",
+      "SourceId": "test",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\",
+      "BasePath": "/",
+      "RelativePath": "test#[.{fingerprint=3oybsdg70o}]!.bundle.scp.css.br",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\test.bundle.scp.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "hruv1dfj07",
+      "Integrity": "g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\test.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\klpa1umk4e-o5modphs96.br",
+      "SourceId": "test",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\",
+      "BasePath": "/",
+      "RelativePath": "index#[.{fingerprint=o5modphs96}]?.html.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "khj102hoj5",
+      "Integrity": "GI8s9bQ0NJWaFdK6lWFZ2IVNTb4LfU4dVyns54gicAo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\r9fkew4337-6gzpyzhau4.br",
+      "SourceId": "test",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint=6gzpyzhau4}]?.css.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "2o883p7o84",
+      "Integrity": "4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\zk58z2lf5j-8inm30yfxf.br",
+      "SourceId": "test",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint=8inm30yfxf}]?.map.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "b4a1wrn6r6",
+      "Integrity": "e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\r9fkew4337-6gzpyzhau4.gz",
+      "SourceId": "test",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint=6gzpyzhau4}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "joqzyw7ssu",
+      "Integrity": "LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\zk58z2lf5j-8inm30yfxf.gz",
+      "SourceId": "test",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint=8inm30yfxf}]?.map.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "fbl5ivwo6k",
+      "Integrity": "Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\test.styles.css",
+      "SourceId": "test",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\",
+      "BasePath": "/",
+      "RelativePath": "test#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "3oybsdg70o",
+      "Integrity": "vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\test.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\test.bundle.scp.css",
+      "SourceId": "test",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\",
+      "BasePath": "/",
+      "RelativePath": "test#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "3oybsdg70o",
+      "Integrity": "vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\test.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\app.css",
+      "SourceId": "test",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "31yucqurzi",
+      "Integrity": "x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "SourceId": "test",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "test",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\index.html",
+      "SourceId": "test",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o5modphs96",
+      "Integrity": "1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/app.31yucqurzi.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\8byfk8o8fg-31yucqurzi.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,000501756147"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1992"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XBluDUEBhvPsA0EWCahtuHQDKI1ZC+dtn+lPj/Ov4U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "31yucqurzi"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.31yucqurzi.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\8byfk8o8fg-31yucqurzi.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0,000571755289"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1748"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AK4+EuYbhE7s8s5kdZJ/Oiw2yp56MZlcmMs0xIkIU3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "31yucqurzi"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.31yucqurzi.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4065"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "31yucqurzi"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.31yucqurzi.css.br",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\8byfk8o8fg-31yucqurzi.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1748"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AK4+EuYbhE7s8s5kdZJ/Oiw2yp56MZlcmMs0xIkIU3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "31yucqurzi"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AK4+EuYbhE7s8s5kdZJ/Oiw2yp56MZlcmMs0xIkIU3U="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.31yucqurzi.css.gz",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\8byfk8o8fg-31yucqurzi.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XBluDUEBhvPsA0EWCahtuHQDKI1ZC+dtn+lPj/Ov4U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "31yucqurzi"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XBluDUEBhvPsA0EWCahtuHQDKI1ZC+dtn+lPj/Ov4U="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\8byfk8o8fg-31yucqurzi.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,000501756147"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1992"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XBluDUEBhvPsA0EWCahtuHQDKI1ZC+dtn+lPj/Ov4U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\8byfk8o8fg-31yucqurzi.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0,000571755289"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1748"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AK4+EuYbhE7s8s5kdZJ/Oiw2yp56MZlcmMs0xIkIU3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4065"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x9vtU0HBti0WpWM8kdh6WrpANrH4HWapI5yBHbaRoGk="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css.br",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\8byfk8o8fg-31yucqurzi.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1748"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AK4+EuYbhE7s8s5kdZJ/Oiw2yp56MZlcmMs0xIkIU3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AK4+EuYbhE7s8s5kdZJ/Oiw2yp56MZlcmMs0xIkIU3U="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css.gz",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\8byfk8o8fg-31yucqurzi.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XBluDUEBhvPsA0EWCahtuHQDKI1ZC+dtn+lPj/Ov4U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XBluDUEBhvPsA0EWCahtuHQDKI1ZC+dtn+lPj/Ov4U="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\r9fkew4337-6gzpyzhau4.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0,000057250816"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17466"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\r9fkew4337-6gzpyzhau4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,000041844506"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23897"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css.br",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\r9fkew4337-6gzpyzhau4.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css.gz",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\r9fkew4337-6gzpyzhau4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23897"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\r9fkew4337-6gzpyzhau4.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0,000057250816"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17466"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\r9fkew4337-6gzpyzhau4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,000041844506"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23897"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\zk58z2lf5j-8inm30yfxf.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0,000017661604"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56619"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\zk58z2lf5j-8inm30yfxf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,000013350065"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74905"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map.br",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\zk58z2lf5j-8inm30yfxf.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56619"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map.gz",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\zk58z2lf5j-8inm30yfxf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74905"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-gzip"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.br",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\r9fkew4337-6gzpyzhau4.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.gz",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\r9fkew4337-6gzpyzhau4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23897"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\zk58z2lf5j-8inm30yfxf.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0,000017661604"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56619"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\zk58z2lf5j-8inm30yfxf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,000013350065"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74905"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map.br",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\zk58z2lf5j-8inm30yfxf.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56619"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map.gz",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\zk58z2lf5j-8inm30yfxf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74905"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-gzip"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\klpa1umk4e-o5modphs96.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,002109704641"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "473"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VJqDx2yt5RwgxNtut0ApcLrXd5k65qUrhw9WEVw2kEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:43:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\klpa1umk4e-o5modphs96.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0,003003003003"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "332"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GI8s9bQ0NJWaFdK6lWFZ2IVNTb4LfU4dVyns54gicAo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:43:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:43:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.br",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\klpa1umk4e-o5modphs96.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GI8s9bQ0NJWaFdK6lWFZ2IVNTb4LfU4dVyns54gicAo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:43:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GI8s9bQ0NJWaFdK6lWFZ2IVNTb4LfU4dVyns54gicAo="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\klpa1umk4e-o5modphs96.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VJqDx2yt5RwgxNtut0ApcLrXd5k65qUrhw9WEVw2kEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:43:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VJqDx2yt5RwgxNtut0ApcLrXd5k65qUrhw9WEVw2kEs="
+        }
+      ]
+    },
+    {
+      "Route": "index.o5modphs96.html",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\klpa1umk4e-o5modphs96.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,002109704641"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "473"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VJqDx2yt5RwgxNtut0ApcLrXd5k65qUrhw9WEVw2kEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:43:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o5modphs96"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8="
+        }
+      ]
+    },
+    {
+      "Route": "index.o5modphs96.html",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\klpa1umk4e-o5modphs96.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0,003003003003"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "332"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GI8s9bQ0NJWaFdK6lWFZ2IVNTb4LfU4dVyns54gicAo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:43:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o5modphs96"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8="
+        }
+      ]
+    },
+    {
+      "Route": "index.o5modphs96.html",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:43:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o5modphs96"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Dh3c6R6xj30K/97A3csbpDILZFEV3KfWlgYrl74Mq8="
+        }
+      ]
+    },
+    {
+      "Route": "index.o5modphs96.html.br",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\klpa1umk4e-o5modphs96.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GI8s9bQ0NJWaFdK6lWFZ2IVNTb4LfU4dVyns54gicAo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:43:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o5modphs96"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GI8s9bQ0NJWaFdK6lWFZ2IVNTb4LfU4dVyns54gicAo="
+        }
+      ]
+    },
+    {
+      "Route": "index.o5modphs96.html.gz",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\klpa1umk4e-o5modphs96.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VJqDx2yt5RwgxNtut0ApcLrXd5k65qUrhw9WEVw2kEs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:43:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o5modphs96"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VJqDx2yt5RwgxNtut0ApcLrXd5k65qUrhw9WEVw2kEs="
+        }
+      ]
+    },
+    {
+      "Route": "test.3oybsdg70o.bundle.scp.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\jhldhs4rh6-3oybsdg70o.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,000615006150"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1625"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3oybsdg70o"
+        },
+        {
+          "Name": "label",
+          "Value": "test.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68="
+        }
+      ]
+    },
+    {
+      "Route": "test.3oybsdg70o.bundle.scp.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\jhldhs4rh6-3oybsdg70o.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0,000740192450"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1350"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3oybsdg70o"
+        },
+        {
+          "Name": "label",
+          "Value": "test.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68="
+        }
+      ]
+    },
+    {
+      "Route": "test.3oybsdg70o.bundle.scp.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\test.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3oybsdg70o"
+        },
+        {
+          "Name": "label",
+          "Value": "test.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68="
+        }
+      ]
+    },
+    {
+      "Route": "test.3oybsdg70o.bundle.scp.css.br",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\jhldhs4rh6-3oybsdg70o.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3oybsdg70o"
+        },
+        {
+          "Name": "label",
+          "Value": "test.bundle.scp.css.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc="
+        }
+      ]
+    },
+    {
+      "Route": "test.3oybsdg70o.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\jhldhs4rh6-3oybsdg70o.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1625"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3oybsdg70o"
+        },
+        {
+          "Name": "label",
+          "Value": "test.bundle.scp.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk="
+        }
+      ]
+    },
+    {
+      "Route": "test.3oybsdg70o.styles.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\9lsaidfgsq-3oybsdg70o.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,000615006150"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1625"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3oybsdg70o"
+        },
+        {
+          "Name": "label",
+          "Value": "test.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68="
+        }
+      ]
+    },
+    {
+      "Route": "test.3oybsdg70o.styles.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\9lsaidfgsq-3oybsdg70o.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0,000740192450"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1350"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3oybsdg70o"
+        },
+        {
+          "Name": "label",
+          "Value": "test.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68="
+        }
+      ]
+    },
+    {
+      "Route": "test.3oybsdg70o.styles.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\test.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3oybsdg70o"
+        },
+        {
+          "Name": "label",
+          "Value": "test.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68="
+        }
+      ]
+    },
+    {
+      "Route": "test.3oybsdg70o.styles.css.br",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\9lsaidfgsq-3oybsdg70o.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3oybsdg70o"
+        },
+        {
+          "Name": "label",
+          "Value": "test.styles.css.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc="
+        }
+      ]
+    },
+    {
+      "Route": "test.3oybsdg70o.styles.css.gz",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\9lsaidfgsq-3oybsdg70o.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1625"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3oybsdg70o"
+        },
+        {
+          "Name": "label",
+          "Value": "test.styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk="
+        }
+      ]
+    },
+    {
+      "Route": "test.bundle.scp.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\jhldhs4rh6-3oybsdg70o.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,000615006150"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1625"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68="
+        }
+      ]
+    },
+    {
+      "Route": "test.bundle.scp.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\jhldhs4rh6-3oybsdg70o.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0,000740192450"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1350"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68="
+        }
+      ]
+    },
+    {
+      "Route": "test.bundle.scp.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\test.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68="
+        }
+      ]
+    },
+    {
+      "Route": "test.bundle.scp.css.br",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\jhldhs4rh6-3oybsdg70o.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc="
+        }
+      ]
+    },
+    {
+      "Route": "test.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\jhldhs4rh6-3oybsdg70o.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1625"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk="
+        }
+      ]
+    },
+    {
+      "Route": "test.styles.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\9lsaidfgsq-3oybsdg70o.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0,000615006150"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1625"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68="
+        }
+      ]
+    },
+    {
+      "Route": "test.styles.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\9lsaidfgsq-3oybsdg70o.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0,000740192450"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1350"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68="
+        }
+      ]
+    },
+    {
+      "Route": "test.styles.css",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\test.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vcu6ppHyOhO5ACemcLCV/rngprrujYL+5wZQOPslZ68="
+        }
+      ]
+    },
+    {
+      "Route": "test.styles.css.br",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\publish\\9lsaidfgsq-3oybsdg70o.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g61ItI/26weEA0T/S4oLH3iF/ssNCj/R3iDyAYT6dNc="
+        }
+      ]
+    },
+    {
+      "Route": "test.styles.css.gz",
+      "AssetFile": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\compressed\\9lsaidfgsq-3oybsdg70o.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1625"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rYZb3jO2QkI+mlM3zw3PK2ep5Z794X5rmMR8FCzKNkk="
+        }
+      ]
+    }
+  ]
+}

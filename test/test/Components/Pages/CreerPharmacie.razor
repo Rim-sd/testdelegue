@@ -1,0 +1,81 @@
+@page "/creer-pharmacie"
+
+<h3 class="text-primary mb-4">CREATION DE PHARMACIE</h3>
+
+<div class="row">
+    <div class="col-md-8">
+        <form @onsubmit="EnregistrerPharmacie">
+            <div class="mb-3">
+                <label class="form-label">Nom de la pharmacie</label>
+                <input type="text" class="form-control" @bind="nouvellePharmacie.NomPharmacie">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Nom du pharmacien</label>
+                <input type="text" class="form-control" @bind="nouvellePharmacie.NomPharmacien">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Prénom du pharmacien</label>
+                <input type="text" class="form-control" @bind="nouvellePharmacie.PrenomPharmacien">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">UG</label>
+                <select class="form-select" @bind="nouvellePharmacie.UG">
+                    <option value="">Sélectionnez une zone géographique</option>
+                    <option value="TETOUAN">TETOUAN</option>
+                    <option value="TANGER">TANGER</option>
+                    <option value="LARACHE">LARACHE</option>
+                    <option value="KENITRA">KENITRA</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Téléphone</label>
+                <input type="tel" class="form-control" @bind="nouvellePharmacie.Telephone">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Adresse</label>
+                <input type="text" class="form-control" @bind="nouvellePharmacie.Adresse">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Potentiel</label>
+                <select class="form-select" @bind="nouvellePharmacie.Potentiel">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Enregistrer
+            </button>
+        </form>
+    </div>
+</div>
+
+@code {
+    private NouvellePharmacie nouvellePharmacie = new();
+
+    private async Task EnregistrerPharmacie()
+    {
+        // Ici, vous pouvez ajouter la logique pour sauvegarder la pharmacie
+        // Par exemple, appeler une API ou un service
+        
+        // Réinitialiser le formulaire après l'enregistrement
+        nouvellePharmacie = new();
+    }
+
+    private class NouvellePharmacie
+    {
+        public string NomPharmacie { get; set; } = "";
+        public string NomPharmacien { get; set; } = "";
+        public string PrenomPharmacien { get; set; } = "";
+        public string UG { get; set; } = "";
+        public string Telephone { get; set; } = "";
+        public string Adresse { get; set; } = "";
+        public string Potentiel { get; set; } = "2"; // Valeur par défaut
+    }
+} 

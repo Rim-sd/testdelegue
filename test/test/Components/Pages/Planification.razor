@@ -1,0 +1,714 @@
+@page "/planification"
+@using System.Collections.Generic
+@using System.Linq
+
+<PageTitle>Planification des Visites</PageTitle>
+
+<div class="container-fluid mt-3">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="d-flex gap-2 align-items-center">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-outline-primary dropdown-toggle" @onclick="ToggleUG">
+                        <i class="bi bi-funnel"></i> UG @(selectedUG ?? "")
+                    </button>
+                    @if (showUGDropdown)
+                    {
+                        <div class="dropdown-menu show" style="position: absolute;">
+                            <button type="button" class="dropdown-item" @onclick="@(() => SelectUG(null))">Tous</button>
+                            @foreach (var ug in pharmacies.Select(p => p.UG).Distinct())
+                            {
+                                var currentUg = ug;
+                                <button type="button" class="dropdown-item" @onclick="@(() => SelectUG(currentUg))">@currentUg</button>
+                            }
+                        </div>
+                    }
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-outline-primary dropdown-toggle" @onclick="TogglePotentiel">
+                        <i class="bi bi-funnel"></i> POTENTIEL @(selectedPotentiel ?? "")
+                    </button>
+                    @if (showPotentielDropdown)
+                    {
+                        <div class="dropdown-menu show" style="position: absolute;">
+                            <button type="button" class="dropdown-item" @onclick="@(() => SelectPotentiel(null))">Tous</button>
+                            <button type="button" class="dropdown-item" @onclick="@(() => SelectPotentiel("1"))">1</button>
+                            <button type="button" class="dropdown-item" @onclick="@(() => SelectPotentiel("2"))">2</button>
+                        </div>
+                    }
+                </div>
+                <div class="flex-grow-1">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Rechercher..." @bind="searchTerm" @bind:event="oninput">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-danger" @onclick="SupprimerSelection" disabled="@(!pharmaciesSelectionnees.Any())">
+                    <i class="bi bi-trash me-2"></i>Supprimer
+                </button>
+                <button type="button" class="btn btn-primary" @onclick="OuvrirModalAjout">
+                    <i class="bi bi-plus-lg me-2"></i>Ajouter
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-9">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <div class="row align-items-center">
+                        <div class="col-2">CODE</div>
+                        <div class="col-3">NOM PHARMACIE</div>
+                        <div class="col-2">PHARMACIEN</div>
+                        <div class="col-2">UG</div>
+                        <div class="col-2">POTENTIEL</div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    <div class="list-group list-group-flush">
+                        @foreach (var pharmacie in GetFilteredPharmacies())
+                        {
+                            <div class="list-group-item @(pharmaciesSelectionnees.Contains(pharmacie) ? "active" : "")"
+                                 @onclick="() => ShowHistorique(pharmacie)">
+                                <div class="row align-items-center">
+                                    <div class="col-2">@pharmacie.Code</div>
+                                    <div class="col-3">@pharmacie.NomPharmacie</div>
+                                    <div class="col-2">Dr. @pharmacie.Pharmacien</div>
+                                    <div class="col-2">
+                                        <i class="bi bi-geo-alt me-1"></i>@pharmacie.UG
+                                    </div>
+                                    <div class="col-2">
+                                        <span class="badge bg-@(pharmacie.Potentiel == "1" ? "warning" : "info")">
+                                            P@(pharmacie.Potentiel)
+                                        </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <div class="form-check" @onclick:stopPropagation="true">
+                                            <input type="checkbox" class="form-check-input"
+                                                   checked="@pharmaciesSelectionnees.Contains(pharmacie)"
+                                                   @onclick="() => ToggleSelection(pharmacie)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="list-group">
+                @for (int i = 1; i <= 8; i++)
+                {
+                    var semaineNum = i;
+                    var count = pharmacies.Count(p => p.Semaine == semaineNum.ToString());
+                    <button type="button" 
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center @(selectedSemaine == semaineNum ? "active" : "")"
+                            @onclick="@(() => SelectSemaine(semaineNum))">
+                        <div>
+                            <i class="bi bi-calendar-week me-2"></i>
+                            SEMAINE @i
+                        </div>
+                        <span class="badge bg-primary rounded-pill">@count</span>
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (showModalAjout)
+{
+    <div class="modal fade show" style="display: block;" tabindex="-1">
+        <div class="modal-dialog modal-xl" style="max-width: 90vw;">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white py-3">
+                    <h5 class="modal-title fs-4">Ajouter des pharmacies</h5>
+                    <button type="button" class="btn-close btn-close-white" @onclick="FermerModalAjout"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div class="d-flex gap-4">
+                                <div class="dropdown" style="min-width: 200px;">
+                                    <button type="button" class="btn btn-outline-primary dropdown-toggle w-100 py-2" @onclick="ToggleUGModal">
+                                        <i class="bi bi-funnel me-2"></i> UG @(selectedUGModal ?? "")
+                                    </button>
+                                    @if (showUGDropdownModal)
+                                    {
+                                        <div class="dropdown-menu show w-100" style="position: absolute;">
+                                            <button type="button" class="dropdown-item py-2" @onclick="@(() => SelectUGModal(null))">Tous</button>
+                                            @foreach (var ug in pharmaciesDisponibles.Select(p => p.UG).Distinct())
+                                            {
+                                                var currentUg = ug;
+                                                <button type="button" class="dropdown-item py-2" @onclick="@(() => SelectUGModal(currentUg))">@currentUg</button>
+                                            }
+                                        </div>
+                                    }
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" class="form-control" placeholder="Rechercher une pharmacie..." 
+                                               @bind="searchTermModal" @bind:event="oninput">
+                                        <button class="btn btn-outline-secondary px-4" type="button">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive" style="max-height: 50vh;">
+                        <table class="table table-hover align-middle">
+                            <thead class="sticky-top bg-white">
+                                <tr>
+                                    <th style="width: 60px;"></th>
+                                    <th style="width: 120px;">Code</th>
+                                    <th style="width: 25%;">Nom Pharmacie</th>
+                                    <th style="width: 20%;">Pharmacien</th>
+                                    <th style="width: 15%;">UG</th>
+                                    <th style="width: 120px;">Potentiel</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var pharmacie in GetFilteredPharmaciesModal())
+                                {
+                                    <tr @onclick="() => ToggleSelectionModal(pharmacie)" 
+                                        class="@(pharmaciesSelectionneesModal.Contains(pharmacie) ? "table-primary" : "")"
+                                        style="height: 60px;">
+                                        <td class="text-center">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" style="transform: scale(1.2);"
+                                                       checked="@pharmaciesSelectionneesModal.Contains(pharmacie)"
+                                                       @onclick:stopPropagation="true"
+                                                       @onclick="() => ToggleSelectionModal(pharmacie)">
+                                            </div>
+                                        </td>
+                                        <td class="fw-bold">@pharmacie.Code</td>
+                                        <td>@pharmacie.NomPharmacie</td>
+                                        <td>@pharmacie.Pharmacien</td>
+                                        <td>@pharmacie.UG</td>
+                                        <td>
+                                            <span class="badge bg-@(pharmacie.Potentiel == "1" ? "warning" : "info") px-3 py-2">
+                                                P@(pharmacie.Potentiel)
+                                            </span>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer py-3">
+                    <div class="d-flex justify-content-between w-100 align-items-center">
+                        <div>
+                            <span class="me-3 fs-5">Semaine sélectionnée :</span>
+                            <div class="btn-group">
+                                @for (int i = 1; i <= 8; i++)
+                                {
+                                    var weekNum = i;
+                                    <button type="button" 
+                                            class="btn @(selectedSemaineModal == weekNum ? "btn-primary" : "btn-outline-primary") px-4 py-2"
+                                            @onclick="() => SelectSemaineModal(weekNum)">
+                                        @weekNum
+                                    </button>
+                                }
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-secondary btn-lg me-3 px-4" @onclick="FermerModalAjout">Annuler</button>
+                            <button type="button" class="btn btn-primary btn-lg px-4" 
+                                    @onclick="AjouterPharmacies" 
+                                    disabled="@(!pharmaciesSelectionneesModal.Any() || selectedSemaineModal == null)">
+                                Ajouter (@pharmaciesSelectionneesModal.Count)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+}
+
+@if (showHistoriqueModal && selectedPharmacie != null)
+{
+    <div class="modal fade show" style="display: block;" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white py-3">
+                    <div>
+                        <h5 class="modal-title fs-4 mb-1">
+                            <i class="bi bi-clock-history me-2"></i>
+                            HISTORIQUE DES VISITES
+                        </h5>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-shop me-2"></i>
+                            <span class="fw-bold">@selectedPharmacie.NomPharmacie</span>
+                            <span class="badge bg-@(selectedPharmacie.Potentiel == "1" ? "warning" : "info") ms-2">
+                                Potentiel @selectedPharmacie.Potentiel
+                            </span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" @onclick="FermerHistorique"></button>
+                </div>
+                <div class="modal-body p-4">
+                    @if (!historiqueVisites.Any())
+                    {
+                        <div class="text-center py-5">
+                            <i class="bi bi-inbox text-muted fs-1"></i>
+                            <p class="text-muted mt-3">Aucune visite enregistrée</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle">
+                                <thead>
+                                    <tr>
+                                        <th><i class="bi bi-calendar me-2"></i>Date de visite</th>
+                                        <th><i class="bi bi-person me-2"></i>Pharmacien vu</th>
+                                        <th><i class="bi bi-file-text me-2"></i>Bon de commande</th>
+                                        <th><i class="bi bi-mortarboard me-2"></i>Formation</th>
+                                        <th><i class="bi bi-box me-2"></i>PLV</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var visite in historiqueVisites.OrderByDescending(v => v.DateVisite))
+                                    {
+                                        <tr>
+                                            <td>@visite.DateVisite.ToString("dd/MM/yyyy")</td>
+                                            <td>@visite.PharmacienVu</td>
+                                            <td>
+                                                <i class="bi @(visite.BonCommande ? "bi-check-circle-fill text-success" : "bi-x-circle-fill text-danger")"></i>
+                                            </td>
+                                            <td>
+                                                <i class="bi @(visite.Formation ? "bi-check-circle-fill text-success" : "bi-x-circle-fill text-danger")"></i>
+                                            </td>
+                                            <td>
+                                                <i class="bi @(visite.PLV ? "bi-check-circle-fill text-success" : "bi-x-circle-fill text-danger")"></i>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-outline-primary btn-sm" @onclick="() => ModifierVisite(visite)">
+                                                    <i class="bi bi-pencil me-1"></i>Modifier
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="FermerHistorique">Fermer</button>
+                    <button type="button" class="btn btn-primary" @onclick="() => ModifierPharmacie(selectedPharmacie)">
+                        <i class="bi bi-pencil me-2"></i>Modifier la pharmacie
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+}
+
+@if (showModificationModal && selectedPharmacie != null)
+{
+    <div class="modal fade show" style="display: block;" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">
+                        <i class="bi bi-shop me-2"></i>
+                        PHARMACIE AFILAL
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" @onclick="FermerModification"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Adresse</label>
+                        <input type="text" class="form-control" @bind="modificationData.Adresse">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Pharmacie</label>
+                        <input type="text" class="form-control" @bind="modificationData.NomPharmacie">
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label class="form-label">Nom du pharmacien</label>
+                            <input type="text" class="form-control" @bind="modificationData.NomPharmacien">
+                        </div>
+                        <div class="col">
+                            <label class="form-label">Prénom du pharmacien</label>
+                            <input type="text" class="form-control" @bind="modificationData.PrenomPharmacien">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tel</label>
+                        <input type="text" class="form-control" @bind="modificationData.Tel">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Potentiel</label>
+                        <select class="form-select" @bind="modificationData.Potentiel">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="FermerModification">Fermer</button>
+                    <button type="button" class="btn btn-primary" @onclick="EnregistrerModifications">
+                        <i class="bi bi-save me-2"></i>Enregistrer les modifications
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+}
+
+@code {
+    private List<Pharmacie> pharmacies = new()
+    {
+        new() { Code = "CC31516-777", NomPharmacie = "Pharmacie Centrale", Pharmacien = "Zachery", UG = "Zone Nord", Potentiel = "1", Semaine = "1" },
+        new() { Code = "CC31517-778", NomPharmacie = "Pharmacie des Alpes", Pharmacien = "Martin", UG = "Zone Sud", Potentiel = "2", Semaine = "1" },
+        new() { Code = "CC31518-779", NomPharmacie = "Pharmacie du Port", Pharmacien = "Sophie", UG = "Zone Est", Potentiel = "1", Semaine = "1" },
+        new() { Code = "CC31519-780", NomPharmacie = "Pharmacie de la Gare", Pharmacien = "Lucas", UG = "Zone Ouest", Potentiel = "2", Semaine = "1" },
+        new() { Code = "CC31520-781", NomPharmacie = "Pharmacie du Marché", Pharmacien = "Emma", UG = "Zone Nord", Potentiel = "1", Semaine = "1" },
+        new() { Code = "CC31521-782", NomPharmacie = "Pharmacie Saint-Jean", Pharmacien = "Thomas", UG = "Zone Sud", Potentiel = "2", Semaine = "1" },
+        new() { Code = "CC31522-783", NomPharmacie = "Pharmacie des Fleurs", Pharmacien = "Julie", UG = "Zone Est", Potentiel = "1", Semaine = "1" },
+        new() { Code = "CC31523-784", NomPharmacie = "Pharmacie du Lac", Pharmacien = "Nicolas", UG = "Zone Ouest", Potentiel = "2", Semaine = "1" },
+        new() { Code = "CC31524-785", NomPharmacie = "Pharmacie du Parc", Pharmacien = "Marie", UG = "Zone Nord", Potentiel = "1", Semaine = "1" },
+        new() { Code = "CC31525-786", NomPharmacie = "Pharmacie du Centre", Pharmacien = "Paul", UG = "Zone Sud", Potentiel = "2", Semaine = "1" },
+        new() { Code = "CC31526-787", NomPharmacie = "Pharmacie Principale", Pharmacien = "Laura", UG = "Zone Nord", Potentiel = "1", Semaine = "2" },
+        new() { Code = "CC31527-788", NomPharmacie = "Pharmacie des Roses", Pharmacien = "Antoine", UG = "Zone Sud", Potentiel = "2", Semaine = "2" },
+        new() { Code = "CC31528-789", NomPharmacie = "Pharmacie du Square", Pharmacien = "Léa", UG = "Zone Est", Potentiel = "1", Semaine = "2" },
+        new() { Code = "CC31529-790", NomPharmacie = "Pharmacie du Mail", Pharmacien = "Hugo", UG = "Zone Ouest", Potentiel = "2", Semaine = "2" },
+        new() { Code = "CC31530-791", NomPharmacie = "Pharmacie des Pins", Pharmacien = "Sarah", UG = "Zone Nord", Potentiel = "1", Semaine = "2" },
+        new() { Code = "CC31531-792", NomPharmacie = "Pharmacie du Soleil", Pharmacien = "Maxime", UG = "Zone Sud", Potentiel = "2", Semaine = "2" },
+        new() { Code = "CC31532-793", NomPharmacie = "Pharmacie de la Place", Pharmacien = "Chloé", UG = "Zone Est", Potentiel = "1", Semaine = "2" },
+        new() { Code = "CC31533-794", NomPharmacie = "Pharmacie des Oliviers", Pharmacien = "Romain", UG = "Zone Ouest", Potentiel = "2", Semaine = "2" },
+        new() { Code = "CC31534-795", NomPharmacie = "Pharmacie du Midi", Pharmacien = "Camille", UG = "Zone Nord", Potentiel = "1", Semaine = "2" },
+        new() { Code = "CC31535-796", NomPharmacie = "Pharmacie des Écoles", Pharmacien = "Louis", UG = "Zone Sud", Potentiel = "2", Semaine = "2" },
+        new() { Code = "CC31536-797", NomPharmacie = "Pharmacie du Boulevard", Pharmacien = "Manon", UG = "Zone Nord", Potentiel = "1", Semaine = "3" },
+        new() { Code = "CC31537-798", NomPharmacie = "Pharmacie des Lilas", Pharmacien = "Gabriel", UG = "Zone Sud", Potentiel = "2", Semaine = "3" },
+        new() { Code = "CC31538-799", NomPharmacie = "Pharmacie du Château", Pharmacien = "Inès", UG = "Zone Est", Potentiel = "1", Semaine = "3" },
+        new() { Code = "CC31539-800", NomPharmacie = "Pharmacie de l'Église", Pharmacien = "Jules", UG = "Zone Ouest", Potentiel = "2", Semaine = "3" },
+        new() { Code = "CC31540-801", NomPharmacie = "Pharmacie des Vignes", Pharmacien = "Louise", UG = "Zone Nord", Potentiel = "1", Semaine = "3" },
+        new() { Code = "CC31541-802", NomPharmacie = "Pharmacie du Moulin", Pharmacien = "Arthur", UG = "Zone Sud", Potentiel = "2", Semaine = "3" },
+        new() { Code = "CC31542-803", NomPharmacie = "Pharmacie des Sources", Pharmacien = "Alice", UG = "Zone Est", Potentiel = "1", Semaine = "3" },
+        new() { Code = "CC31543-804", NomPharmacie = "Pharmacie du Pont", Pharmacien = "Théo", UG = "Zone Ouest", Potentiel = "2", Semaine = "3" },
+        new() { Code = "CC31544-805", NomPharmacie = "Pharmacie des Ormes", Pharmacien = "Eva", UG = "Zone Nord", Potentiel = "1", Semaine = "3" },
+        new() { Code = "CC31545-806", NomPharmacie = "Pharmacie du Coteau", Pharmacien = "Nathan", UG = "Zone Sud", Potentiel = "2", Semaine = "3" },
+        new() { Code = "CC31546-807", NomPharmacie = "Pharmacie de la Fontaine", Pharmacien = "Zoé", UG = "Zone Nord", Potentiel = "1", Semaine = "4" },
+        new() { Code = "CC31547-808", NomPharmacie = "Pharmacie des Cèdres", Pharmacien = "Adam", UG = "Zone Sud", Potentiel = "2", Semaine = "4" },
+        new() { Code = "CC31548-809", NomPharmacie = "Pharmacie du Vallon", Pharmacien = "Jade", UG = "Zone Est", Potentiel = "1", Semaine = "4" },
+        new() { Code = "CC31549-810", NomPharmacie = "Pharmacie des Tilleuls", Pharmacien = "Raphaël", UG = "Zone Ouest", Potentiel = "2", Semaine = "4" },
+        new() { Code = "CC31550-811", NomPharmacie = "Pharmacie du Jardin", Pharmacien = "Lola", UG = "Zone Nord", Potentiel = "1", Semaine = "4" },
+        new() { Code = "CC31551-812", NomPharmacie = "Pharmacie des Platanes", Pharmacien = "Ethan", UG = "Zone Sud", Potentiel = "2", Semaine = "4" },
+        new() { Code = "CC31552-813", NomPharmacie = "Pharmacie de la Tour", Pharmacien = "Clara", UG = "Zone Est", Potentiel = "1", Semaine = "4" },
+        new() { Code = "CC31553-814", NomPharmacie = "Pharmacie du Beffroi", Pharmacien = "Léo", UG = "Zone Ouest", Potentiel = "2", Semaine = "4" },
+        new() { Code = "CC31554-815", NomPharmacie = "Pharmacie des Remparts", Pharmacien = "Anna", UG = "Zone Nord", Potentiel = "1", Semaine = "4" },
+        new() { Code = "CC31555-816", NomPharmacie = "Pharmacie du Donjon", Pharmacien = "Tom", UG = "Zone Sud", Potentiel = "2", Semaine = "4" },
+        new() { Code = "CC31556-817", NomPharmacie = "Pharmacie des Halles", Pharmacien = "Lucie", UG = "Zone Nord", Potentiel = "1", Semaine = "5" },
+        new() { Code = "CC31557-818", NomPharmacie = "Pharmacie du Théâtre", Pharmacien = "Samuel", UG = "Zone Sud", Potentiel = "2", Semaine = "5" },
+        new() { Code = "CC31558-819", NomPharmacie = "Pharmacie de la Mairie", Pharmacien = "Nina", UG = "Zone Est", Potentiel = "1", Semaine = "5" },
+        new() { Code = "CC31559-820", NomPharmacie = "Pharmacie du Palais", Pharmacien = "Victor", UG = "Zone Ouest", Potentiel = "2", Semaine = "5" },
+        new() { Code = "CC31560-821", NomPharmacie = "Pharmacie des Arts", Pharmacien = "Emma", UG = "Zone Nord", Potentiel = "1", Semaine = "5" },
+        new() { Code = "CC31561-822", NomPharmacie = "Pharmacie du Musée", Pharmacien = "Lucas", UG = "Zone Sud", Potentiel = "2", Semaine = "5" },
+        new() { Code = "CC31562-823", NomPharmacie = "Pharmacie de l'Opéra", Pharmacien = "Léna", UG = "Zone Est", Potentiel = "1", Semaine = "5" },
+        new() { Code = "CC31563-824", NomPharmacie = "Pharmacie du Casino", Pharmacien = "Noah", UG = "Zone Ouest", Potentiel = "2", Semaine = "5" },
+        new() { Code = "CC31564-825", NomPharmacie = "Pharmacie des Thermes", Pharmacien = "Chloé", UG = "Zone Nord", Potentiel = "1", Semaine = "5" },
+        new() { Code = "CC31565-826", NomPharmacie = "Pharmacie du Spa", Pharmacien = "Enzo", UG = "Zone Sud", Potentiel = "2", Semaine = "5" },
+        new() { Code = "CC31566-827", NomPharmacie = "Pharmacie du Stade", Pharmacien = "Mia", UG = "Zone Nord", Potentiel = "1", Semaine = "6" },
+        new() { Code = "CC31567-828", NomPharmacie = "Pharmacie du Gymnase", Pharmacien = "Louis", UG = "Zone Sud", Potentiel = "2", Semaine = "6" },
+        new() { Code = "CC31568-829", NomPharmacie = "Pharmacie de la Piscine", Pharmacien = "Sarah", UG = "Zone Est", Potentiel = "1", Semaine = "6" },
+        new() { Code = "CC31569-830", NomPharmacie = "Pharmacie du Tennis", Pharmacien = "Hugo", UG = "Zone Ouest", Potentiel = "2", Semaine = "6" },
+        new() { Code = "CC31570-831", NomPharmacie = "Pharmacie du Golf", Pharmacien = "Emma", UG = "Zone Nord", Potentiel = "1", Semaine = "6" },
+        new() { Code = "CC31571-832", NomPharmacie = "Pharmacie du Parc", Pharmacien = "Jules", UG = "Zone Sud", Potentiel = "2", Semaine = "6" },
+        new() { Code = "CC31572-833", NomPharmacie = "Pharmacie des Sports", Pharmacien = "Alice", UG = "Zone Est", Potentiel = "1", Semaine = "6" },
+        new() { Code = "CC31573-834", NomPharmacie = "Pharmacie du Vélodrome", Pharmacien = "Gabriel", UG = "Zone Ouest", Potentiel = "2", Semaine = "6" },
+        new() { Code = "CC31574-835", NomPharmacie = "Pharmacie de l'Hippodrome", Pharmacien = "Louise", UG = "Zone Nord", Potentiel = "1", Semaine = "6" },
+        new() { Code = "CC31575-836", NomPharmacie = "Pharmacie du Racing", Pharmacien = "Léo", UG = "Zone Sud", Potentiel = "2", Semaine = "6" },
+        new() { Code = "CC31576-837", NomPharmacie = "Pharmacie de l'Université", Pharmacien = "Eva", UG = "Zone Nord", Potentiel = "1", Semaine = "7" },
+        new() { Code = "CC31577-838", NomPharmacie = "Pharmacie du Campus", Pharmacien = "Thomas", UG = "Zone Sud", Potentiel = "2", Semaine = "7" },
+        new() { Code = "CC31578-839", NomPharmacie = "Pharmacie des Facultés", Pharmacien = "Clara", UG = "Zone Est", Potentiel = "1", Semaine = "7" },
+        new() { Code = "CC31579-840", NomPharmacie = "Pharmacie du Collège", Pharmacien = "Nathan", UG = "Zone Ouest", Potentiel = "2", Semaine = "7" },
+        new() { Code = "CC31580-841", NomPharmacie = "Pharmacie du Lycée", Pharmacien = "Jade", UG = "Zone Nord", Potentiel = "1", Semaine = "7" },
+        new() { Code = "CC31581-842", NomPharmacie = "Pharmacie de l'École", Pharmacien = "Lucas", UG = "Zone Sud", Potentiel = "2", Semaine = "7" },
+        new() { Code = "CC31582-843", NomPharmacie = "Pharmacie du Conservatoire", Pharmacien = "Manon", UG = "Zone Est", Potentiel = "1", Semaine = "7" },
+        new() { Code = "CC31583-844", NomPharmacie = "Pharmacie de l'Institut", Pharmacien = "Paul", UG = "Zone Ouest", Potentiel = "2", Semaine = "7" },
+        new() { Code = "CC31584-845", NomPharmacie = "Pharmacie de l'Académie", Pharmacien = "Léa", UG = "Zone Nord", Potentiel = "1", Semaine = "7" },
+        new() { Code = "CC31585-846", NomPharmacie = "Pharmacie du Savoir", Pharmacien = "Arthur", UG = "Zone Sud", Potentiel = "2", Semaine = "7" },
+        new() { Code = "CC31586-847", NomPharmacie = "Pharmacie de l'Hôpital", Pharmacien = "Julie", UG = "Zone Nord", Potentiel = "1", Semaine = "8" },
+        new() { Code = "CC31587-848", NomPharmacie = "Pharmacie de la Clinique", Pharmacien = "Antoine", UG = "Zone Sud", Potentiel = "2", Semaine = "8" },
+        new() { Code = "CC31588-849", NomPharmacie = "Pharmacie du Centre Médical", Pharmacien = "Sophie", UG = "Zone Est", Potentiel = "1", Semaine = "8" },
+        new() { Code = "CC31589-850", NomPharmacie = "Pharmacie des Urgences", Pharmacien = "Maxime", UG = "Zone Ouest", Potentiel = "2", Semaine = "8" },
+        new() { Code = "CC31590-851", NomPharmacie = "Pharmacie de la Santé", Pharmacien = "Emma", UG = "Zone Nord", Potentiel = "1", Semaine = "8" },
+        new() { Code = "CC31591-852", NomPharmacie = "Pharmacie du Bien-être", Pharmacien = "Nicolas", UG = "Zone Sud", Potentiel = "2", Semaine = "8" },
+        new() { Code = "CC31592-853", NomPharmacie = "Pharmacie des Soins", Pharmacien = "Laura", UG = "Zone Est", Potentiel = "1", Semaine = "8" },
+        new() { Code = "CC31593-854", NomPharmacie = "Pharmacie de la Vie", Pharmacien = "Hugo", UG = "Zone Ouest", Potentiel = "2", Semaine = "8" },
+        new() { Code = "CC31594-855", NomPharmacie = "Pharmacie du Repos", Pharmacien = "Marie", UG = "Zone Nord", Potentiel = "1", Semaine = "8" },
+        new() { Code = "CC31595-856", NomPharmacie = "Pharmacie de la Guérison", Pharmacien = "Thomas", UG = "Zone Sud", Potentiel = "2", Semaine = "8" }
+    };
+
+    private HashSet<Pharmacie> pharmaciesSelectionnees = new();
+    private string? selectedUG;
+    private string? selectedPotentiel;
+    private string searchTerm = "";
+    private int? selectedSemaine;
+    private bool showUGDropdown;
+    private bool showPotentielDropdown;
+    private bool showModalAjout;
+    private string? selectedUGModal;
+    private string searchTermModal = "";
+    private bool showUGDropdownModal;
+    private int? selectedSemaineModal;
+    private HashSet<Pharmacie> pharmaciesSelectionneesModal = new();
+
+    private List<Pharmacie> pharmaciesDisponibles = new()
+    {
+        new() { Code = "493", NomPharmacie = "AL WAFAA OUAZZANE", Pharmacien = "MAAZI", UG = "TETOUAN", Potentiel = "2" },
+        new() { Code = "913", NomPharmacie = "BNI-RZINE CHEFCHAOUEN", Pharmacien = "BOUCHAMA", UG = "TETOUAN", Potentiel = "2" },
+        new() { Code = "1804", NomPharmacie = "FIFI CHEFCHAOUEN", Pharmacien = "ACHARKOUK", UG = "TETOUAN", Potentiel = "2" },
+        new() { Code = "4808", NomPharmacie = "AL AQSA", Pharmacien = "FASIH", UG = "TETOUAN", Potentiel = "2" },
+        new() { Code = "4809", NomPharmacie = "SCANDINAVIE", Pharmacien = "AHARCHI", UG = "TETOUAN", Potentiel = "2" },
+        new() { Code = "5410", NomPharmacie = "CARTHAGE", Pharmacien = "JAANINE", UG = "TETOUAN", Potentiel = "2" },
+        new() { Code = "5597", NomPharmacie = "HAMZA", Pharmacien = "ADYOUBANE", UG = "TETOUAN", Potentiel = "2" },
+        // Ajoutez d'autres pharmacies disponibles ici...
+    };
+
+    private List<Pharmacie> GetFilteredPharmacies()
+    {
+        return pharmacies
+            .Where(p => string.IsNullOrEmpty(selectedUG) || p.UG == selectedUG)
+            .Where(p => string.IsNullOrEmpty(selectedPotentiel) || p.Potentiel == selectedPotentiel)
+            .Where(p => selectedSemaine == null || p.Semaine == selectedSemaine.ToString())
+            .Where(p => string.IsNullOrEmpty(searchTerm) || 
+                    p.NomPharmacie.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    p.Code.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    p.Pharmacien.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    p.UG.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+            .ToList();
+    }
+
+    private void ToggleSelection(Pharmacie pharmacie)
+    {
+        if (pharmaciesSelectionnees.Contains(pharmacie))
+            pharmaciesSelectionnees.Remove(pharmacie);
+        else
+            pharmaciesSelectionnees.Add(pharmacie);
+    }
+
+    private void SupprimerSelection()
+    {
+        foreach (var pharmacie in pharmaciesSelectionnees.ToList())
+        {
+            pharmacies.Remove(pharmacie);
+        }
+        pharmaciesSelectionnees.Clear();
+    }
+
+    private void ToggleUG()
+    {
+        showUGDropdown = !showUGDropdown;
+        showPotentielDropdown = false;
+    }
+
+    private void TogglePotentiel()
+    {
+        showPotentielDropdown = !showPotentielDropdown;
+        showUGDropdown = false;
+    }
+
+    private void SelectUG(string? ug)
+    {
+        selectedUG = ug;
+        showUGDropdown = false;
+        StateHasChanged();
+    }
+
+    private void SelectPotentiel(string? potentiel)
+    {
+        selectedPotentiel = potentiel;
+        showPotentielDropdown = false;
+        StateHasChanged();
+    }
+
+    private void SelectSemaine(int semaine)
+    {
+        selectedSemaine = selectedSemaine == semaine ? null : semaine;
+        StateHasChanged();
+    }
+
+    private void OuvrirModalAjout()
+    {
+        showModalAjout = true;
+        selectedUGModal = null;
+        searchTermModal = "";
+        selectedSemaineModal = null;
+        pharmaciesSelectionneesModal.Clear();
+    }
+
+    private void FermerModalAjout()
+    {
+        showModalAjout = false;
+    }
+
+    private List<Pharmacie> GetFilteredPharmaciesModal()
+    {
+        return pharmaciesDisponibles
+            .Where(p => string.IsNullOrEmpty(selectedUGModal) || p.UG == selectedUGModal)
+            .Where(p => string.IsNullOrEmpty(searchTermModal) || 
+                    p.NomPharmacie.Contains(searchTermModal, StringComparison.OrdinalIgnoreCase) ||
+                    p.Code.Contains(searchTermModal, StringComparison.OrdinalIgnoreCase) ||
+                    p.Pharmacien.Contains(searchTermModal, StringComparison.OrdinalIgnoreCase) ||
+                    p.UG.Contains(searchTermModal, StringComparison.OrdinalIgnoreCase))
+            .ToList();
+    }
+
+    private void ToggleUGModal()
+    {
+        showUGDropdownModal = !showUGDropdownModal;
+    }
+
+    private void SelectUGModal(string? ug)
+    {
+        selectedUGModal = ug;
+        showUGDropdownModal = false;
+        StateHasChanged();
+    }
+
+    private void ToggleSelectionModal(Pharmacie pharmacie)
+    {
+        if (pharmaciesSelectionneesModal.Contains(pharmacie))
+            pharmaciesSelectionneesModal.Remove(pharmacie);
+        else
+            pharmaciesSelectionneesModal.Add(pharmacie);
+    }
+
+    private void SelectSemaineModal(int semaine)
+    {
+        selectedSemaineModal = selectedSemaineModal == semaine ? null : semaine;
+        StateHasChanged();
+    }
+
+    private void AjouterPharmacies()
+    {
+        if (selectedSemaineModal.HasValue)
+        {
+            foreach (var pharmacie in pharmaciesSelectionneesModal)
+            {
+                var nouvellePharmacieVisite = new Pharmacie
+                {
+                    Code = pharmacie.Code,
+                    NomPharmacie = pharmacie.NomPharmacie,
+                    Pharmacien = pharmacie.Pharmacien,
+                    UG = pharmacie.UG,
+                    Potentiel = pharmacie.Potentiel,
+                    Semaine = selectedSemaineModal.Value.ToString()
+                };
+                pharmacies.Add(nouvellePharmacieVisite);
+            }
+        }
+        FermerModalAjout();
+    }
+
+    private bool showHistoriqueModal;
+    private bool showModificationModal;
+    private Pharmacie? selectedPharmacie;
+    private List<VisiteHistorique> historiqueVisites = new();
+    private ModificationData modificationData = new();
+
+    private void ShowHistorique(Pharmacie pharmacie)
+    {
+        selectedPharmacie = pharmacie;
+        historiqueVisites = GetHistoriqueVisites(pharmacie);
+        showHistoriqueModal = true;
+    }
+
+    private void FermerHistorique()
+    {
+        showHistoriqueModal = false;
+        selectedPharmacie = null;
+        historiqueVisites.Clear();
+    }
+
+    private List<VisiteHistorique> GetHistoriqueVisites(Pharmacie pharmacie)
+    {
+        // Simuler des données d'historique - à remplacer par les vraies données
+        return new List<VisiteHistorique>();
+    }
+
+    private void ModifierVisite(VisiteHistorique visite)
+    {
+        // Logique pour modifier une visite
+    }
+
+    private void ModifierPharmacie(Pharmacie pharmacie)
+    {
+        modificationData = new ModificationData
+        {
+            Adresse = "",
+            NomPharmacie = pharmacie.NomPharmacie,
+            NomPharmacien = pharmacie.Pharmacien,
+            PrenomPharmacien = "",
+            Tel = "",
+            Potentiel = pharmacie.Potentiel
+        };
+        showHistoriqueModal = false;
+        showModificationModal = true;
+    }
+
+    private void FermerModification()
+    {
+        showModificationModal = false;
+        modificationData = new ModificationData();
+    }
+
+    private void EnregistrerModifications()
+    {
+        if (selectedPharmacie != null)
+        {
+            selectedPharmacie.NomPharmacie = modificationData.NomPharmacie;
+            selectedPharmacie.Pharmacien = $"{modificationData.NomPharmacien} {modificationData.PrenomPharmacien}".Trim();
+            selectedPharmacie.Potentiel = modificationData.Potentiel;
+        }
+        FermerModification();
+    }
+
+    public class VisiteHistorique
+    {
+        public DateTime DateVisite { get; set; }
+        public string PharmacienVu { get; set; } = "";
+        public bool BonCommande { get; set; }
+        public bool Formation { get; set; }
+        public bool PLV { get; set; }
+    }
+
+    public class ModificationData
+    {
+        public string Adresse { get; set; } = "";
+        public string NomPharmacie { get; set; } = "";
+        public string NomPharmacien { get; set; } = "";
+        public string PrenomPharmacien { get; set; } = "";
+        public string Tel { get; set; } = "";
+        public string Potentiel { get; set; } = "";
+    }
+
+    public class Pharmacie
+    {
+        public string Code { get; set; } = "";
+        public string NomPharmacie { get; set; } = "";
+        public string Pharmacien { get; set; } = "";
+        public string UG { get; set; } = "";
+        public string Potentiel { get; set; } = "";
+        public string Semaine { get; set; } = "";
+    }
+} 

@@ -1,0 +1,47 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">test</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="visite" Match="NavLinkMatch.All">
+                <span class="bi bi-calendar-check-fill" aria-hidden="true"></span> Visite
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="planification">
+                <span class="bi bi-calendar-week-fill" aria-hidden="true"></span> Planification
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="zone">
+                <span class="bi bi-geo-alt-fill" aria-hidden="true"></span> Zone
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="creer-pharmacie">
+                <span class="bi bi-building-add-fill" aria-hidden="true"></span> Créer Pharma
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="rapport">
+                <span class="bi bi-file-earmark-text-fill" aria-hidden="true"></span> Rapport
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="qse">
+                <span class="bi bi-shield-check" aria-hidden="true"></span> QSE
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="pharmacovigilance">
+                <span class="bi bi-heart-pulse-fill" aria-hidden="true"></span> Pharmacovigilance
+            </NavLink>
+        </div>
+    </nav>
+</div>
