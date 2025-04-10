@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\test.styles.css",
+      "Id": "C:\\Users\\r.saadi\\Source\\Repos\\testdelegue\\test\\test\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\test.styles.css",
       "PackagePath": "staticwebassets\\test.styles.css"
     },
     {
-      "Id": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\r.saadi\\Source\\Repos\\testdelegue\\test\\test\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\r.saadi\\Source\\Repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\r.saadi\\Source\\Repos\\testdelegue\\test\\test\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\wwwroot\\index.html",
+      "Id": "C:\\Users\\r.saadi\\Source\\Repos\\testdelegue\\test\\test\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
