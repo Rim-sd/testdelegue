@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SK9shctCAp4=",
+  "dgSpecHash": "SDK/bhPjuHE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\test.csproj",
+  "projectFilePath": "C:\\Users\\r.saadi\\Source\\Repos\\testdelegue\\test\\test\\test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\r.saadi\\.nuget\\packages\\googlegson\\2.11.0.3\\googlegson.2.11.0.3.nupkg.sha512",
     "C:\\Users\\r.saadi\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.0\\microsoft.aspnetcore.authorization.9.0.0.nupkg.sha512",
