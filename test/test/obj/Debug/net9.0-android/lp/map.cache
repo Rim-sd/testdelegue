@@ -165,3 +165,6 @@ Microsoft.Maui.aar
 Microsoft.Maui.Essentials.aar
 Xamarin.Google.Crypto.Tink.Android.aar
 Xamarin.Google.ErrorProne.Annotations.aar
+Xamarin.Kotlin.StdLib.Common.dll
+Xamarin.KotlinX.Serialization.Core.dll
+Xamarin.KotlinX.Serialization.Core.Jvm.dll

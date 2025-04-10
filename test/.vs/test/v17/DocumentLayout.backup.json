@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A571FE2C-1320-4B9D-96DC-4B3CB6F3D7C8}|test\\test.csproj|c:\\users\\rimox\\source\\repos\\testdelegue\\test\\test\\components\\pages\\pharmacovigilance.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A571FE2C-1320-4B9D-96DC-4B3CB6F3D7C8}|test\\test.csproj|solutionrelative:test\\components\\pages\\pharmacovigilance.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A571FE2C-1320-4B9D-96DC-4B3CB6F3D7C8}|test\\test.csproj|c:\\users\\rimox\\source\\repos\\testdelegue\\test\\test\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A571FE2C-1320-4B9D-96DC-4B3CB6F3D7C8}|test\\test.csproj|solutionrelative:test\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -27,6 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Pharmacovigilance.razor",
+              "DocumentMoniker": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\Components\\Pages\\Pharmacovigilance.razor",
+              "RelativeDocumentMoniker": "test\\Components\\Pages\\Pharmacovigilance.razor",
+              "ToolTip": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\Components\\Pages\\Pharmacovigilance.razor",
+              "RelativeToolTip": "test\\Components\\Pages\\Pharmacovigilance.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T08:55:49.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "test\\Components\\Pages\\Home.razor",

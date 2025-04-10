@@ -1,0 +1,8 @@
+C:\Users\r.saadi\source\repos\testdelegue\test\test\wwwroot\css\app.css
+C:\Users\r.saadi\source\repos\testdelegue\test\test\wwwroot\index.html
+C:\Users\r.saadi\source\repos\testdelegue\test\test\wwwroot\css\bootstrap\bootstrap.min.css
+C:\Users\r.saadi\source\repos\testdelegue\test\test\wwwroot\css\bootstrap\bootstrap.min.css.map
+wwwroot\css\app.css
+wwwroot\css\bootstrap\bootstrap.min.css
+wwwroot\css\bootstrap\bootstrap.min.css.map
+wwwroot\index.html
