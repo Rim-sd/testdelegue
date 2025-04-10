@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\r.saadi\\Source\\Repos\\testdelegue\\test\\test\\test.csproj": {}
+    "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\r.saadi\\Source\\Repos\\testdelegue\\test\\test\\test.csproj": {
+    "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\r.saadi\\Source\\Repos\\testdelegue\\test\\test\\test.csproj",
+        "projectUniqueName": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\test.csproj",
         "projectName": "test",
-        "projectPath": "C:\\Users\\r.saadi\\Source\\Repos\\testdelegue\\test\\test\\test.csproj",
+        "projectPath": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\test.csproj",
         "packagesPath": "C:\\Users\\r.saadi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\r.saadi\\Source\\Repos\\testdelegue\\test\\test\\obj\\",
+        "outputPath": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\",
+  "WorkspaceRootPath": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A571FE2C-1320-4B9D-96DC-4B3CB6F3D7C8}|test\\test.csproj|c:\\users\\rimox\\source\\repos\\testdelegue\\test\\test\\components\\pages\\pharmacovigilance.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A571FE2C-1320-4B9D-96DC-4B3CB6F3D7C8}|test\\test.csproj|c:\\users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\components\\pages\\pharmacovigilance.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A571FE2C-1320-4B9D-96DC-4B3CB6F3D7C8}|test\\test.csproj|solutionrelative:test\\components\\pages\\pharmacovigilance.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A571FE2C-1320-4B9D-96DC-4B3CB6F3D7C8}|test\\test.csproj|c:\\users\\rimox\\source\\repos\\testdelegue\\test\\test\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A571FE2C-1320-4B9D-96DC-4B3CB6F3D7C8}|test\\test.csproj|c:\\users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A571FE2C-1320-4B9D-96DC-4B3CB6F3D7C8}|test\\test.csproj|solutionrelative:test\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -18,8 +18,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
@@ -32,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Pharmacovigilance.razor",
-              "DocumentMoniker": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\Components\\Pages\\Pharmacovigilance.razor",
+              "DocumentMoniker": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\Components\\Pages\\Pharmacovigilance.razor",
               "RelativeDocumentMoniker": "test\\Components\\Pages\\Pharmacovigilance.razor",
-              "ToolTip": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\Components\\Pages\\Pharmacovigilance.razor",
-              "RelativeToolTip": "test\\Components\\Pages\\Pharmacovigilance.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAHAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\Components\\Pages\\Pharmacovigilance.razor*",
+              "RelativeToolTip": "test\\Components\\Pages\\Pharmacovigilance.razor*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-10T08:55:49.582Z",
               "EditorCaption": ""
@@ -45,14 +49,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\Components\\Pages\\Home.razor",
+              "DocumentMoniker": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "test\\Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\rimox\\source\\repos\\testdelegue\\test\\test\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\r.saadi\\source\\repos\\testdelegue\\test\\test\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "test\\Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T09:39:27.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T09:39:27.483Z"
             }
           ]
         }
